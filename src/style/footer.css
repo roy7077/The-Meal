@@ -1,9 +1,12 @@
 
 .footer{
+    position:static;
+    left: 0;
+    bottom: 0;
     padding: 5px;
     margin: 5px;
     background-color:rgb(83, 1, 1);
-    height: 150px;
+    height: 200px;
     width: 100%;
 }
 
@@ -13,8 +16,10 @@
 }
 
 .icon-1,.icon-2,.icon-3{
-   
-   margin: 20px;
+    font-size: 50px;
+    color:white;
+    text-decoration: none;
+    margin: 30px;
 }
 
 .copy-right{
@@ -23,3 +28,4 @@
     font-weight:lighter;
     font-size: medium;
 }
+

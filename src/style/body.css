@@ -54,6 +54,10 @@
     justify-content: center;
 }
 
+.list1,.list2{
+  text-decoration: none;
+  color: black;
+}
 .lower-body>.food1>h1,.lower-body>.food2>h1{
     color: brown;
     font-size: x-large;
