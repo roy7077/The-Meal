@@ -1,6 +1,5 @@
 .body{
     padding: 5px;
-    margin: 5px;
 }
 .search{
     text-align: center;
@@ -67,3 +66,15 @@
     border: 1px solid brown;
     margin: 10px;
 }
+
+/*-------------responsive------------------*/
+@media screen and (max-width:700px){
+   
+  .lower-body>.food1>h1{
+    margin-top: 20px;
+  }
+  input{
+    border: none;
+  }
+}
+

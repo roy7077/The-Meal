@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Card from "./Card";
 import "../style/body.css";
 import { Link } from "react-router-dom";
+import Shimmer1 from "./Shimmer1";
 
 const Body = () => {
   const [searchText, setSearchText] = useState("");
@@ -65,7 +66,7 @@ const Body = () => {
     )
   }
 
-  if (!latestdata || !randomdata) return <h1>no food</h1>;
+  if (!latestdata || !randomdata) return <Shimmer1/>;
 
   return (
     <div className="body">

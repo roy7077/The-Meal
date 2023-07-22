@@ -1,7 +1,9 @@
 import "../style/about.css"
 
 const About=()=>{
+    
     return (
+        
         <div className="about">
           <img className="image" src="https://wallpaperaccess.com/full/3133075.jpg"/>
           <div className="about-info">

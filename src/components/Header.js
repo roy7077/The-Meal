@@ -13,7 +13,7 @@ const Header=()=>{
         <li><Link to="/" className='l1'>Home</Link></li>
         <li><Link to="/about" className='l2'>About</Link></li>
         <li><Link to="/contact" className='l3'>Contact</Link></li>
-        <li className='l4'>Cart</li>
+        <li className='l4'>Favourite</li>
         </ul>
        </div>
       </div>

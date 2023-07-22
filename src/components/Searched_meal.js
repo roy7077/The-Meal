@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams,Link } from "react-router-dom";
+import { Icon } from '@iconify/react';
 import Card from "./Card";
+import Shimmer2 from "./Shimmer2";
 import "../style/search_meal.css"
 
 const Searched_meal=()=>{
@@ -23,6 +25,9 @@ const Searched_meal=()=>{
         console.log(mealdata.meals[0]);
     }
     
+    if(!meal)
+    return <Shimmer2/>;
+
     var s="strIngredient";
     var s2="strMeasure";
 
@@ -32,9 +37,19 @@ const Searched_meal=()=>{
     var ing="";
     return (
       <div className="searched_meal">
-        <div className="search1"> 
+        <div className="search1">
+
+        <div className="search1-2">
         <Card {...meal}/>
         </div>
+
+        <div className="search1-1">
+        <Link to={meal?.strYoutube} className="youtube"><Icon icon="mdi:youtube" className="icon5"/> <h1>Watch recipe</h1></Link>
+        <button class="button-3">Save this recipe</button>
+        </div>
+    
+       </div>
+
         <div className="search3">
           <h1>Ingredients</h1>
           <div className="search2"> 
