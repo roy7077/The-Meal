@@ -8,6 +8,10 @@
     justify-content: space-between;
 }
 
+.logo-link{
+    text-decoration: none;
+    color: white;
+}
 .logo{
     width: 30%;
     color: white;

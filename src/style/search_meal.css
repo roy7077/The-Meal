@@ -42,7 +42,6 @@
 }
 .container>h1{
     font-size: medium;
-    font-weight: lighter;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .search3>h1{
@@ -135,7 +134,6 @@
         width: 80%;
         margin-bottom: 10px;
     }
-    
     
 }
   

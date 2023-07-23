@@ -6,6 +6,8 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Searched_meal from './components/Searched_meal';
 import { createBrowserRouter , RouterProvider} from 'react-router-dom';
+import Favourite from './components/Favourite';
+import Error from './components/Error';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,7 +15,7 @@ const approuter=createBrowserRouter([
   {
     path:"/",
     element:<App/>,
-    // errorElement:<Error/>,
+    errorElement:<Error/>,
     children:[
       {
       path:"/",
@@ -30,6 +32,14 @@ const approuter=createBrowserRouter([
     {
       path:"/searched/:id",
       element:<Searched_meal/>
+    },
+    {
+      path:"/favourite/searched/:id",
+      element:<Searched_meal/>
+    },
+    {
+      path:"/favourite",
+      element:<Favourite/>,
     }
     ]
   }

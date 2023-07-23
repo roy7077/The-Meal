@@ -1,11 +1,13 @@
 .about{
-    
+    justify-content: center;
+    text-align: center;
     padding: 10rem;
 }
 
 .about> .image{
     border-radius: 0px;
-    width: 100%;
+    width: 50%;
+    height: 50%;
 }
 .about-info{
     font-size: x-large;
@@ -23,7 +25,10 @@
         padding:1rem;
         margin:10px;
     }
-
+    .about>.image{
+        height: 100%;
+        width: 100%;
+    }
     .about>.about-info{
         padding: 0.2rem;
     }

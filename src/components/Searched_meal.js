@@ -4,6 +4,10 @@ import { Icon } from '@iconify/react';
 import Card from "./Card";
 import Shimmer2 from "./Shimmer2";
 import "../style/search_meal.css"
+import { useSelector } from "react-redux/es/hooks/useSelector";
+import { useDispatch } from "react-redux";
+import { additems} from "../utils/Cartslice";
+
 
 const Searched_meal=()=>{
 
@@ -22,9 +26,16 @@ const Searched_meal=()=>{
 
         const mealdata=await data1.json();
         setMeal(mealdata?.meals[0]);
-        console.log(mealdata.meals[0]);
+        // console.log(mealdata.meals[0]);
     }
     
+    const item=useSelector((Store)=>Store.cart.items);
+    const dispatch=useDispatch();
+
+    const handlevent=()=>{
+      dispatch(additems(meal.idMeal));
+    }
+
     if(!meal)
     return <Shimmer2/>;
 
@@ -45,7 +56,7 @@ const Searched_meal=()=>{
 
         <div className="search1-1">
         <Link to={meal?.strYoutube} className="youtube"><Icon icon="mdi:youtube" className="icon5"/> <h1>Watch recipe</h1></Link>
-        <button class="button-3">Save this recipe</button>
+        <button class="button-3" onClick={()=>handlevent()}>Save this recipe</button>
         </div>
     
        </div>
