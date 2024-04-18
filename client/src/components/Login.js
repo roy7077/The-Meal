@@ -21,7 +21,7 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
     
-        const url = 'http://localhost:8080/api/v1/login'; // Replace with your server endpoint
+        const url = 'https://the-meal.onrender.com/api/v1/login'; // Replace with your server endpoint
     
         try {
             const response = await fetch(url, {
